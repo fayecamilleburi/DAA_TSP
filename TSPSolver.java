@@ -39,7 +39,8 @@ public class TSPSolver {
             for (String location : p) {
                 System.out.print(location + " -> ");
             }
-            System.out.println("\nDistance: " + totalDistance);
+            System.out.println(p[0]); //Prints the starting point of each corresponding permutation
+            System.out.println("Distance: " + totalDistance);
             System.out.println();
 
             //Updating shortest path and distance if the current path is shorter
@@ -54,7 +55,8 @@ public class TSPSolver {
         for (String location : shortestPath) {
             System.out.print(location + " -> ");
         }
-        System.out.println("\nDistance: " + minDistance);
+        System.out.println(shortestPath[0]); //Prints out the starting point of the shortest path
+        System.out.println("Distance: " + minDistance);
     }
 
     //Method to generate all possible permutations
